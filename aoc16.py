@@ -36,7 +36,7 @@ def fft(signal):
         new_pattern = deque()
 
         for num in base_pattern:
-            for i in range(0, turn):
+            for _ in range(0, turn):
                 new_pattern.append(num)
         new_pattern.rotate(-1)
         new_pattern = deque(islice(new_pattern, 0, turns))
